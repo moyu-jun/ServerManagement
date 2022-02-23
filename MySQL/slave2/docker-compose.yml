@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:8
+    restart: always
+    hostname: mysql
+    container_name: mysql
+    environment:
+      - TZ=Asia/Shanghai
+      - MYSQL_ROOT_PASSWORD=your_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql.cnf:/etc/mysql/my.cnf
+      - ./data:/var/lib/mysql

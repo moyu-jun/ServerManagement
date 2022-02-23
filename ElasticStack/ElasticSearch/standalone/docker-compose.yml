@@ -1,0 +1,20 @@
+version: '2.2'
+services:
+  es:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.15.2
+    container_name: es
+    hostname: es
+    restart: always
+    environment:
+      - discovery.type=single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - ./config:/usr/share/elasticsearch/config
+      - ./logs:/usr/share/elasticsearch/logs
+      - ./data:/usr/share/elasticsearch/data
+      - ./plugins:/usr/share/elasticsearch/plugins
+    ports:
+      - 9200:9200

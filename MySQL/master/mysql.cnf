@@ -1,0 +1,41 @@
+# The MySQL  Client configuration file.
+#
+# For explanations see
+# http://dev.mysql.com/doc/mysql/en/server-system-variables.html
+
+[mysqld]
+pid-file        = /var/run/mysqld/mysqld.pid
+socket          = /var/run/mysqld/mysqld.sock
+datadir         = /var/lib/mysql
+secure-file-priv= NULL
+
+server-id=10
+default-time-zone='+08:00'
+lower-case-table-names=1
+
+# GTID
+gtid-mode=on
+enforce-gtid-consistency=true
+relay-log-recovery=true
+
+# binlog
+log-bin=master-bin
+relay-log=relay-bin
+log-slave-updates=true
+slave-skip-errors=1062,1032
+expire-logs-days=15
+
+# SQL Mode setting
+sql-mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
+
+# slow sql log
+slow-query-log=ON
+slow-query-log-file=/var/lib/mysql/mysql-slow.log
+long-query-time=2
+
+# 默认编码
+character-set-server=utf8mb4
+collation-server=utf8mb4_general_ci
+
+[mysql]
+default-character-set=utf8mb4

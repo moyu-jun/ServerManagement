@@ -1,0 +1,14 @@
+version: "3"
+services:
+  maxscale:
+    image: mariadb/maxscale:latest
+    restart: always
+    hostname: mxs
+    container_name: mxs
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./config/maxscale.cnf:/etc/maxscale.cnf
+    ports:
+      - 8989:8989
+      - 4006:4006
