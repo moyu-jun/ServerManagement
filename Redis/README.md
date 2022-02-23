@@ -1,4 +1,4 @@
-# install redis with docker
+# Redis
 
 ## 下载 Redis
 

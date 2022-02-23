@@ -1,4 +1,4 @@
-# install maxscale with docker
+# MaxScale
 
 `MaxScale` 是 MariaDB 开发的一个中间件产品。它是一个智能的数据库代理中间件。在这里主要是用到了它的读写分离功能，实现 MySQL 主从集群的智能读写分离。
 

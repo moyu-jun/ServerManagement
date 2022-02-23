@@ -8,10 +8,10 @@
 
 ## 应用管理
 
-1. [Install Redis](./Redis/README.md)
+1. [Redis](./Redis/README.md)
 
-2. [Install MySQL Cluster](./MySQL/README.md)
+2. [MySQL](./MySQL/README.md)
 
-3. [Install MaxScale](./MaxScale/README.md)
+3. [MaxScale](./MaxScale/README.md)
 
-4. [Install ElasticSearch Cluster](./ElasticStack/ElasticSearch/README.md)
+4. [ElasticSearch](./ElasticStack/ElasticSearch/README.md)

@@ -1,4 +1,4 @@
-# install mysql cluster with docker
+# MySQL
 
 mysql 主从集群的应用范围较为广泛，一般有两种同步方案，一种是传统的基于 binlog 进行主从复制，另一种则是基于 GTID 进行主从复制（也需要开启 binlog）。
 
