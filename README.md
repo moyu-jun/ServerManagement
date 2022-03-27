@@ -4,14 +4,12 @@
 
 ## 服务器
 
-### CentOS
+* [CentOS 基础](./CentOS/README.md)
 
 ## 应用管理
 
-1. [Redis](./Redis/README.md)
-
-2. [MySQL](./MySQL/README.md)
-
-3. [MaxScale](./MaxScale/README.md)
-
-4. [ElasticSearch](./ElasticStack/ElasticSearch/README.md)
+* [Nginx](./Nginx/README.md)
+* [Redis](./Redis/README.md)
+* [MySQL](./MySQL/README.md)
+* [MaxScale](./MaxScale/README.md)
+* [ElasticSearch](./ElasticStack/ElasticSearch/README.md)
